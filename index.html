@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Royal Detail - Auto-Detailing Dienstleistungen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #d4af37;
+            font-family: 'Arial', sans-serif;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-image: url('images/logo.png'); /* Replace with your logo path */
+            background-size: cover;
+            margin: 0 auto;
+        }
+        h1, h2, h3, p {
+            color: #d4af37;
+        }
+        a {
+            color: #d4af37;
+        }
+        .image.main {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 2em;
+        }
+        .image.main img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .fields {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .field {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        .field.half {
+            width: 48%;
+        }
+        .field label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .field input, .field textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #d4af37;
+            border-radius: 5px;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        .actions input {
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .actions input.primary {
+            background-color: #d4af37;
+            color: #1a1a1a;
+        }
+        .actions input[type="reset"] {
+            background-color: #333;
+            color: #d4af37;
+        }
+        .icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
+        }
+        .icons li {
+            margin: 0 1em;
+        }
+        .icons li a {
+            color: #d4af37;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="logo"></div>
+            <div class="content">
+                <div class="inner">
+                    <h1>Royal Detail</h1>
+                    <p>Dein Experte für professionelles Auto-Detailing in Nürnberg, Fürth, Roth, Schwabach und Erlangen.</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Über uns</a></li>
+                    <li><a href="#services">Leistungen</a></li>
+                    <li><a href="#about">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Intro -->
+            <article id="intro">
+                <h2 class="major">Über uns</h2>
+                <span class="image main"><img src="images/car1.jpg" alt="" /></span>
+                <p>Bei Royal Detail bieten wir hochwertige Auto-Detailing Dienstleistungen direkt an deinem gewünschten Ort an. Unser Team fährt zu dir und verwandelt dein Auto in ein Meisterstück.</p>
+            </article>
+
+            <!-- Services -->
+            <article id="services">
+                <h2 class="major">Leistungen</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Leistung</th>Preis</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grundpflege</td>
+                            <td>150 Euro</td>
+                            <td>Komplette Außenreinigung, Innenraumaufbereitung, Lüftung.</td>
+                        </tr>
+                        <tr>
+                            <td>Standardaufbereitung</td>
+                            <td>250 Euro</td>
+                            <td>Grundpflege plus Polishing, Kühlergrillreinigung.</td>
+                        </tr>
+                        <tr>
+                            <td>Professionelle Aufbereitung</td>
+                            <td>350 Euro</td>
+                            <td>Standardaufbereitung plus Full Detailing, High-End Polishing.</td>
+                        </tr>
+                        <tr>
+                            <td>Ultimate Detailing</td>
+                            <td>500 Euro</td>
+                            <td>Professionelle Aufbereitung plus Full Leather Care.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+
+        <!-- About -->
+        <article id="about">
+    <h2 class="major">Kontakt & Termin</h2>
+    <span class="image main"><img src="images/contact.jpg" alt="" /></span>
+
+    <form action="https://formspree.io/f/xovkbgko" method="POST">
+        <div class="fields">
+            <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div class="field half">
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div class="field">
+                <label for="message">Nachricht / Wunschtermin</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+            </div>
+        </div>
+        <ul class="actions">
+            <li><button type="submit" class="primary">Anfrage senden</button></li>
+            <li><input type="reset" value="Zurücksetzen" /></li>
+        </ul>
+    </form>
+
+    <p style="margin-top: 1.5em;">
+        <strong>Antwortzeit:</strong> innerhalb 24 h per E-Mail.<br>
+        <strong>Standorte:</strong> Nürnberg · Fürth · Roth · Schwabach · Erlangen
+    </p>
+
+    <ul class="icons">
+        <li><a href="https://wa.me/49123456789" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+        <li><a href="https://instagram.com/royaldetail_nbg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+    </ul>
+</article>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="copyright">&copy; Royal Detail. Alle Rechte vorbehalten. Design: <a href="https://html5up.net ">HTML5 UP</a>.</p>
+    </footer>
+
+</div>
+
+<!-- BG -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+```
